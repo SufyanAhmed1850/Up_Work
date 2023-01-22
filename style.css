@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Toto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    font-size: 16px;
+}
+:root{
+    --clr-dgreen: #108A00;
+    --clr-green: #14a800;
+    --clr-black: #000;
+    --clr-white: #fff;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .8em 1.5em;
+    /* font-size: 10px; */
+    /* font-weight: 500; */
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+.nav_logo{
+    width: 6em;
+}
+.nav_logo img{
+    width: 100%;
+}
+nav a{
+    text-decoration: none;
+    color: var(--clr-black);
+    font-size: .9em;
+}
+nav .nav_left{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.nav_left .links a{
+    padding-left: .6em;
+}
+.nav_left .links a:hover{
+    color: var(--clr-green);
+}
+.nav_right input, .nav_right a{
+    margin-left: 2em;
+}
+.nav_right .search{
+    border: 2px solid rgb(213, 213, 213);
+    padding: .5em 3em .5em 2em;
+    border-radius: 2em;
+    outline: none;
+}
+.nav_right select{
+    border: 2px solid rgb(213, 213, 213);
+    padding: .62em 1em;
+    border-radius: 2em;
+    outline: none;
+    font-size: .87em;
+}
+nav .nav_right .btn{
+    padding: .7em 1.5em;
+    border-radius: 2em;
+    background-color: var(--clr-dgreen);
+    color: var(--clr-white);
+    transition: all 250ms ease;
+}
+nav .nav_right .btn:hover{
+    background-color: var(--clr-green);
+}
+.bottom_nav{
+    padding: 1.5em .8em;
+}
+.bottom_nav a{
+    margin-left: 1.2em;
+    font-size: .86em;
+    font-weight: 500;
+    cursor: pointer;
+}
+.bottom_nav a:hover:not(.mo){
+    text-decoration: underline;
+}
+.first{
+    width: 90%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: auto;
+}
+.first_left{
+    width: 34em;
+}
+.first_left h1{
+    font-size: 5em;
+    line-height: 1em;
+    margin-top: .4em;
+    color: var(--clr-green);
+    font-family: 'Noto Serif Toto', serif;
+}
+.first_left p{
+    font-size: 1.5em;
+    color: #5e6d55;
+    line-height: 1.3;
+    margin-top: .3em;
+}
+.first_left button{
+    margin-top: .6em;
+    text-decoration: none;
+    padding: .6em 1.5em;
+    border: none;
+    cursor: pointer;
+    border-radius: 2em;
+    background-color: var(--clr-green);
+    color: var(--clr-white);
+    transition: all 250ms ease;
+}
+.first_left button:hover{
+    background-color: var(--clr-dgreen);
+}
+.powered{
+    margin-top: 6em;
+}
+.powered p{
+    font-size: 1.15em;
+    color: rgb(154, 154, 154);
+}
+.powered img{
+    margin-right: 1.5em;
+}
+.first_right{
+    width: 30em;
+}
+.first_right img{
+    width: 100%;
+}
+.second{
+    width: 78%;
+    padding-top: 5em;
+    margin: auto;
+}
+.second_head h1{
+    font-family: 'Noto Serif Toto', serif;
+    color: #001e00;
+    font-size: 2.5em;
+}
+.second_head p{
+    font-weight: 500;
+    color: rgb(91, 91, 91);
+    margin-bottom: 3em;
+}
+.second_head .green{
+    color: var(--clr-dgreen);
+    cursor: pointer;
+}
+.second_head .green:hover{
+    color: var(--clr-green);
+    text-decoration: underline;
+}
+.lgreen{
+    color: var(--clr-green);
+}
+.skills_wrapper{
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-column-gap: 2em;
+    grid-row-gap: 1em;
+    margin-bottom: 3em;
+}
+.skills{
+    background-color: #f2f7f2;
+    border-radius: .5em;
+    height: 8em;
+    padding: 1.2em 1.6em 1.2em 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    cursor: pointer;
+}
+.skills:hover{
+    background-color: #dce2dc;
+}
+.skills h1{
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.skills p{
+    color: #5e6d55;
+}
+.back_img{
+    width: 83%;
+    height: 38.85em;
+    background-image: url(./images/find-talent.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    border: none;
+    border-radius: .5em;
+    overflow: hidden;
+    padding: 1.7em 2.1em;
+    position: relative;
+    margin-bottom: 3em;
+}
+.back_img h3{
+    color: var(--clr-white);
+    font-size: 1.5em;
+}
+.third_bottom{
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 1.5em;
+    color: var(--clr-white);
+    width: 100%;
+}
+.talent_wrapper{
+    display: flex;
+    gap: 1.5em;
+}
+.talent{
+    background-color: var(--clr-green);
+    padding: .8em 3em 1.2em 1.2em;
+    flex-grow: .26;
+    border-radius: .5em;
+    cursor: pointer;
+    transition: all 250ms ease;
+}
+.talent:hover{
+    color: var(--clr-green);
+    background-color: var(--clr-white);
+}
+.talent h2{
+    font-size: 2em;
+}
+.talent p{
+    font-size: 1.1em;
+    padding-top: .8em;
+}
+.third_head{
+    width: 25em;
+    margin-bottom: 2.5em;
+}
+.third_head h1{
+    font-size: 4em;
+    line-height: 1.1;
+    margin-bottom: .5em;
+    font-family: 'Noto Serif Toto', serif;
+}
+.third_head p{
+    font-size: 1.2em;
+    line-height: 1.3;
+}
+.bgimg{
+    position: relative;
+}
+.bgimg img{
+    position: absolute;
+    z-index: 1;
+    left: 51.4em;
+    bottom: -15px;
+}
+.fourth{
+    display: flex;
+    width: 83%;
+    height: 38em;
+    margin: auto;
+}
+.fourth_left{
+    border-radius: .5em;
+    margin: 0;
+    width: 65%;
+    background-color: #f2f7f2;
+    padding: 4em 15em 1.5em 1.8em;
+    margin-right: 5%;
+}
+.fourth_left h1{
+    font-family: 'Noto Serif Toto', serif;
+    font-size: 4em;
+}
+.fourth_left dl{
+    margin-top: 1.3em;
+}
+.fourth_left dl dt{
+    font-size: 2.2em;
+    font-weight: 500;
+    margin-top: .8em;
+}
+.fourth_left dl dd{
+    font-size: 1.15em;
+    color: rgb(116, 116, 116);
+}
+.fourth_right{
+    border-radius: .5em;
+    width: 30%;
+    background-color: var(--clr-green);
+    color: var(--clr-white);
+    position: relative;
+}
+.fourth_bottom{
+    position: absolute;
+    bottom: 0;
+    padding: 4em 2em;
+}
+.fourth_bottom h3, .fourth_bottom h2{
+    font-size: 2.2em;
+    line-height: 1;
+}
+.icon_wrapper{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.icon_wrapper .icon{
+    padding-top: .25em;
+    margin-right: 1em;
+}
+.fourth_bottom i{
+    font-size: 1.6em;
+}
