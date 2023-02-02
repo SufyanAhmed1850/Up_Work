@@ -521,6 +521,9 @@ nav .nav_right .btn:hover{
     line-height: 3;
     color: #d5e0d5;
 }
+.ninth_lists div li:hover:not(:nth-child(1)){
+    text-decoration: underline;
+}
 .ninth .links{
     display: flex;
     justify-content: space-between;
@@ -548,20 +551,15 @@ nav .nav_right .btn:hover{
     gap: 1em;
     list-style: none;
     cursor: pointer;
+    font-size: .5em;
 }
-.ninth .last li:hover{
+.ninth .last li:hover:not(:nth-child(1)){
     text-decoration: underline;
 }
 .ninth .last span{
     margin-right: 2.5em;
     cursor: auto;
 }
-
-
-
-
-
-
 @media only screen and (max-width: 630px) {
     .nav_right{
         display: none;
