@@ -18,8 +18,6 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: .8em 1.5em;
-    /* font-size: 10px; */
-    /* font-weight: 500; */
     border-bottom: 1px solid rgb(221, 221, 221);
 }
 .nav_logo{
@@ -85,6 +83,7 @@ nav .nav_right .btn:hover{
 .first{
     width: 90%;
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-around;
     margin: auto;
@@ -163,7 +162,7 @@ nav .nav_right .btn:hover{
 }
 .skills_wrapper{
     display: grid;
-    grid-template-columns:repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
     grid-column-gap: 2em;
     grid-row-gap: 1em;
     margin-bottom: 3em;
@@ -171,7 +170,6 @@ nav .nav_right .btn:hover{
 .skills{
     background-color: #f2f7f2;
     border-radius: .5em;
-    height: 8em;
     padding: 1.2em 1.6em 1.2em 2em;
     display: flex;
     flex-direction: column;
@@ -190,7 +188,6 @@ nav .nav_right .btn:hover{
 }
 .back_img{
     width: 83%;
-    height: 38.85em;
     background-image: url(./images/find-talent.webp);
     background-repeat: no-repeat;
     background-position: center;
@@ -208,20 +205,19 @@ nav .nav_right .btn:hover{
     font-size: 1.5em;
 }
 .third_bottom{
-    position: absolute;
-    bottom: 0;
+    margin-top: 4em;
     padding-bottom: 1.5em;
     color: var(--clr-white);
     width: 100%;
 }
 .talent_wrapper{
-    display: flex;
-    gap: 1.5em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;
 }
 .talent{
     background-color: var(--clr-green);
     padding: .8em 3em 1.2em 1.2em;
-    flex-grow: .26;
     border-radius: .5em;
     cursor: pointer;
     transition: all 250ms ease;
@@ -261,18 +257,18 @@ nav .nav_right .btn:hover{
     bottom: -15px;
 }
 .fourth{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-gap: 2em;
     width: 83%;
-    height: 38em;
     margin: auto;
 }
 .fourth_left{
+    grid-column: 1 / span 2;
     border-radius: .5em;
     margin: 0;
-    width: 65%;
     background-color: #f2f7f2;
-    padding: 4em 15em 1.5em 1.8em;
-    margin-right: 5%;
+    padding: 4em 15em 2.5em 1.8em;
 }
 .fourth_left h1{
     font-family: 'Noto Serif Toto', serif;
@@ -292,14 +288,12 @@ nav .nav_right .btn:hover{
 }
 .fourth_right{
     border-radius: .5em;
-    width: 30%;
     background-color: var(--clr-green);
     color: var(--clr-white);
-    position: relative;
+    display: flex;
+    align-items: flex-end;
 }
 .fourth_bottom{
-    position: absolute;
-    bottom: 0;
     padding: 4em 2em;
 }
 .fourth_bottom h3, .fourth_bottom h2{
