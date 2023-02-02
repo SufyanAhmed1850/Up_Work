@@ -517,6 +517,9 @@ nav .nav_right .btn:hover{
     line-height: 2;
     font-weight: 500;
 }
+.ninth_lists div li:not(:nth-child(1)){
+    cursor: pointer;
+}
 .ninth_lists div li:nth-child(1){
     line-height: 3;
     color: #d5e0d5;
